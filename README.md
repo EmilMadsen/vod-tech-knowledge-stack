@@ -22,6 +22,9 @@ Technologies Include:
 
 # Todos
 
+~docker tutorials~  
+~springboot + docker~  
+~dockerize voduzi/tomcat~  
 angular2  
 springboot REST API  
 activeMQ  
