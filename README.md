@@ -34,6 +34,7 @@ Technologies Include:
 - activeMQ  
 - hibernate + mysql  
 - mongodb  
+- flyway
 
 **gradle build and update docker image**  
 
