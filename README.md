@@ -25,8 +25,14 @@ Technologies Include:
 ~docker tutorials~  
 ~springboot + docker~  
 ~dockerize voduzi/tomcat~  
-angular2  
-springboot REST API  
-activeMQ  
-hibernate + mysql  
-mongodb  
+~docker tutorials~  
+~vuejs + reactjs consume api~  
+**the project:**  
+- angular2  
+- springboot REST API  
+- activeMQ  
+- hibernate + mysql  
+- mongodb  
+
+**gradle build and update docker image**  
+
