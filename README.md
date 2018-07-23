@@ -4,7 +4,6 @@ Technologies Include:
 - Java 8 
 - Groovy
 - Angular (v2+), Material design
-- Apache Camel
 - Maven
 - Gradle
 - Spring Boot (v2+)
@@ -13,10 +12,18 @@ Technologies Include:
 - REST
 - Docker
 - Kubernetes
-- Redhat OpenShift, Ansible, Terraform
 - Apache ActiveMQ
 - Jenkins
 - MySQL
-- Couchbase
+- MongoDB
 - Git/Github
 - Elasticsearch/Logstash/Kibana
+
+
+# Todos
+
+angular2
+springboot REST API
+activeMQ  
+hibernate + mysql
+mongodb
