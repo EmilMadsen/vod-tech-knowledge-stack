@@ -22,8 +22,8 @@ Technologies Include:
 
 # Todos
 
-angular2
-springboot REST API
+angular2  
+springboot REST API  
 activeMQ  
-hibernate + mysql
-mongodb
+hibernate + mysql  
+mongodb  
