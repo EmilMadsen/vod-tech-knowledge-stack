@@ -28,11 +28,11 @@ Technologies Include:
 ~docker tutorials~  
 ~vuejs + reactjs consume api~  
 
-**the project:**  
-- angular2  
-- springboot REST API  
-- activeMQ  
-- hibernate + mysql  
+~**the project:**~  
+~- angular2~  
+~- springboot REST API~  
+~- activeMQ~  
+~- hibernate + mysql~  
 - mongodb  
 - flyway
 
