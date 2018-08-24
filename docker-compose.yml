@@ -1,0 +1,27 @@
+version: '3'
+
+services: 
+  docker-mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=db_example
+      - MYSQL_PASSWORD=root
+  activemq-test:
+    image: webcenter/activemq
+    environment:
+      - ACTIVEMQ_ADMIN_LOGIN=admin
+      - ACTIVEMQ_ADMIN_PASSWORD=admin
+  doubleducker-webapp:
+    image: emilmadsen/vodtech-api
+    depends_on:
+      - docker-mysql
+      - activemq-test
+    ports:
+      - 8080:8080
+#    environment:
+#      - DATABASE_HOST=docker-mysql
+#      - DATABASE_USER=root
+#      - DATABASE_PASSWORD=root
+#      - DATABASE_NAME=db_example
+#      - DATABASE_PORT=3306
