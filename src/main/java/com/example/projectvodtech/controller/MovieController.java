@@ -4,39 +4,24 @@ import com.example.projectvodtech.exception.ResourceNotFoundException;
 import com.example.projectvodtech.model.Movie;
 import com.example.projectvodtech.repository.MovieRepository;
 import io.micrometer.core.instrument.Counter;
-import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Metrics;
-import io.micrometer.core.instrument.Tags;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import java.util.ArrayList;
 
 @Controller
 @RequestMapping(path="/api")
 public class MovieController {
 
-    MeterRegistry registry;
-
     private Counter counter = Metrics.counter("movie.calls", "uri", "/messages");
 
     private Iterable<Movie> movieList;
 
-    private ArrayList<String> test = new ArrayList<>();
-
     @Autowired
     private MovieRepository movieRepository;
-
-    public MovieController(MeterRegistry registry) {
-        test.add("test");
-        test.add("2");
-        test.add("3");
-        test.add("4");
-        registry.gaugeCollectionSize("movie.size", Tags.empty(), (ArrayList) movieList);
-    }
 
     //    @CrossOrigin(origins = "http://localhost:4200")
     @GetMapping("/movie")
@@ -44,7 +29,6 @@ public class MovieController {
 
         counter.increment();
         movieList = movieRepository.findAll();
-        test.add("3");
 
         return movieList;
     }
