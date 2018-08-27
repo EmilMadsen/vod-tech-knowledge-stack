@@ -35,6 +35,7 @@ Technologies Include:
 ~- hibernate + mysql~  
 - mongodb  
 - flyway
+- prometheus exposure and fun
 
 **gradle build and update docker image**  
 **kubernetes**
